@@ -32,7 +32,6 @@
 
   ![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/3.png)
 
-  > 图2 参考非直达车次面板
 
 ### 3. 系统管理功能
 
@@ -99,16 +98,17 @@
     * model是javabean。
 
     * src包括所有的java文件、配置文件
+        
+       > 参考目录结构1
 
       ​![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/4.png)
 
-     > 参考目录结构1
-
     * webroot包括jsp、js、image、web-inf等，lib包括所有的jar包（web-inf下的class与jar不需要提交，web.xml等配置文件需要提交）。
-
+      >参考目录结构2
+      
       ![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/5.png)
 
-      >参考目录结构2
+
 
   * 2、源代码：
 
