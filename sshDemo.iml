@@ -9,9 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
       </configuration>
       <facet type="Struts2" name="Struts 2">
         <configuration>
@@ -64,6 +61,10 @@
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:5.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-commons:5.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-tree:5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.struts.xwork:xwork-core:2.3.30" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:3.3" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-commons:3.3" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-tree:3.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts2-spring-plugin:2.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts2-convention-plugin:2.5.5" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.40" level="project" />
