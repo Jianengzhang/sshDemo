@@ -6,6 +6,10 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class UserAction extends ActionSupport implements ModelDriven<User> {
     private User user = new User();
     private UserService userService;
@@ -24,7 +28,10 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
         //调用Service
         User existUser = userService.checkLogin(user);
         if(null != existUser){
-            ActionContext.getContext().getSession().put("existUser",existUser);
+            List<User> arrays =new ArrayList<User>();
+            arrays.add(existUser);
+            ActionContext.getContext().getSession().put("existUser",arrays);
+            System.out.println(arrays.get(0).getUserName()+arrays.get(0).getPassword());
             return SUCCESS;
         }else {
             this.addActionError("用户名或者密码错误");
