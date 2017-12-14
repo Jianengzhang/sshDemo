@@ -22,8 +22,14 @@
             <p class="message">Already registered? <a href="#">Sign In</a></p>
         </form>
         <form class="login-form" action="login.action" method="POST" namespace="/">
-            <input type="text" name="userName" placeholder="请输入用户名"/>
-            <input type="password" name="password" placeholder="请输入密码"/>
+            <label for="userName">Username</label>
+            <br/>
+            <input type="text" name="userName" id="username" placeholder="请输入用户名"/>
+            <br/>
+            <label for="password">password</label>
+            <br/>
+            <input type="password" name="password" id="password" placeholder="请输入密码"/>
+            <br/>
             <button>login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
         </form>

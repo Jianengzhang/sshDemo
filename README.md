@@ -12,13 +12,13 @@
 
   > 参考页面如下：
 
-  ![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/1.png)
+  ![img](src/main/webapp/images/readme/1.png)
 
 * 可根据出发时间，到达时间，出发站，历时，票价等信息排序。
 
   > 车次参考面板如下：
 
-  ![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/2.png)
+  ![img](src/main/webapp/images/readme/2.png)
 
 ### 2．高级业务功能
 
@@ -30,7 +30,7 @@
 
   > 参考页面如下：
 
-  ![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/3.png)
+  ![img](src/main/webapp/images/readme/3.png)
 
 ### 3. 系统管理功能
 
@@ -100,13 +100,13 @@
 
        > 参考目录结构1
 
-      ​![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/4.png)
+      ​![img](src/main/webapp/images/readme/4.png)
 
   * webroot包括jsp、js、image、web-inf等，lib包括所有的jar包（web-inf下的class与jar不需要提交，web.xml等配置文件需要提交）。
 
       >参考目录结构2
 
-      ![img](https://raw.githubusercontent.com/Jianengzhang/markdownPhotos/master/5.png)
+      ![img](src/main/webapp/images/readme/5.png)
 
   * 2、源代码：
 
