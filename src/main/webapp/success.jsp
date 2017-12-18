@@ -16,6 +16,7 @@
     <s:property value="#user.userName"/>
     <s:property value="#user.password"/>
 </s:iterator>
+
 <h1>success</h1>
 </body>
 </html>

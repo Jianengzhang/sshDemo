@@ -1,8 +1,8 @@
-package com.hdu.ssh.service.Impl;
+package com.hdu.ssh.login.service.Impl;
 
-import com.hdu.ssh.dao.UserDao;
-import com.hdu.ssh.pojo.User;
-import com.hdu.ssh.service.UserService;
+import com.hdu.ssh.login.dao.UserDao;
+import com.hdu.ssh.login.pojo.User;
+import com.hdu.ssh.login.service.UserService;
 
 public class UserServiceImpl implements UserService {
     private UserDao userDao;

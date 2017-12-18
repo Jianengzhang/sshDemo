@@ -1,7 +1,7 @@
-package com.hdu.ssh.dao.Impl;
+package com.hdu.ssh.login.dao.Impl;
 
-import com.hdu.ssh.dao.UserDao;
-import com.hdu.ssh.pojo.User;
+import com.hdu.ssh.login.dao.UserDao;
+import com.hdu.ssh.login.pojo.User;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 
 import java.util.List;

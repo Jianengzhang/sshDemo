@@ -1,5 +1,10 @@
-package com.hdu.ssh.pojo;
+package com.hdu.ssh.station.pojo;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "station")
 public class Station {
     int stationId;
     String stationName;

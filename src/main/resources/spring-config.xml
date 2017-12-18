@@ -54,25 +54,37 @@ http://www.springframework.org/schema/tx/spring-tx.xsd ">
         <property name="mappingResources">
             <list>
                 <value>hib/User.hbm.xml</value>
+                <value>hib/Station.hbm.xml</value>
             </list>
         </property>
 
         <property name="packagesToScan">
             <list>
-                <value>com.hdu.ssh.pojo</value>
+                <value>com.hdu.ssh.login.pojo</value>
             </list>
         </property>
     </bean>
     <!--Action交给Spring来管理-->
-    <bean id="userAction" class="com.hdu.ssh.action.UserAction" scope="prototype">
+    <bean id="userAction" class="com.hdu.ssh.login.action.UserAction" scope="prototype">
         <property name="userService" ref="userService"/>
     </bean>
+    <bean id="stationAction" class="com.hdu.ssh.station.action.stationAction" scope="prototype">
+        <property name="stationService" ref="stationService"/>
+    </bean>
+
     <!--配置Service层的类-->
-    <bean id="userService" class="com.hdu.ssh.service.Impl.UserServiceImpl">
+    <bean id="userService" class="com.hdu.ssh.login.service.Impl.UserServiceImpl">
         <property name="userDao" ref="userDao"/>
     </bean>
+    <bean id="stationService" class="com.hdu.ssh.station.service.impl.StationServiceImpl">
+        <property name="stationDao" ref="stationDao"/>
+    </bean>
+
     <!--配置Dao层的类-->
-    <bean id="userDao" class="com.hdu.ssh.dao.Impl.UserDaoImpl">
+    <bean id="userDao" class="com.hdu.ssh.login.dao.Impl.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="stationDao" class="com.hdu.ssh.station.dao.impl.StationDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
     <!--配置事务管理-->

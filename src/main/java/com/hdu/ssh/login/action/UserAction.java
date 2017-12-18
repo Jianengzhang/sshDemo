@@ -1,13 +1,12 @@
-package com.hdu.ssh.action;
+package com.hdu.ssh.login.action;
 
-import com.hdu.ssh.pojo.User;
-import com.hdu.ssh.service.UserService;
+import com.hdu.ssh.login.pojo.User;
+import com.hdu.ssh.login.service.UserService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class UserAction extends ActionSupport implements ModelDriven<User> {

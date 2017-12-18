@@ -1,8 +1,6 @@
-package com.hdu.ssh.service;
+package com.hdu.ssh.login.service;
 
-import com.hdu.ssh.pojo.User;
-
-import java.util.List;
+import com.hdu.ssh.login.pojo.User;
 
 public interface UserService {
     User checkLogin(User user) throws Exception;

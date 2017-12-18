@@ -5,9 +5,12 @@
 
 <struts>
     <package name="default" extends="struts-default"  namespace="/">
-        <action name="login" class="com.hdu.ssh.action.UserAction" method="login">
+        <action name="login" class="com.hdu.ssh.login.action.UserAction" method="login">
             <result name="input">/login.jsp</result>
             <result name="success" type="redirect">/success.jsp</result>
+        </action>
+        <action name="OptionStation" class="com.hdu.ssh.station.action.stationAction" method="OptionStation">
+            <result name="homePage">/success.jsp</result>
         </action>
     </package>
 </struts>

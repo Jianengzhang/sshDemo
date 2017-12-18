@@ -1,4 +1,4 @@
-package com.hdu.ssh.pojo;
+package com.hdu.ssh.login.pojo;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
